@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data caches (do not upload raw data unless it's a dataset publication)
+data/raw/*.csv
+
+# Ignore auto-generated output directories if you only want to version source code
+# Note: If you want to include the final Excel/Figures for reviewers, you can comment these out.
+# results/excel/
+# results/figures/
+# results/logs/

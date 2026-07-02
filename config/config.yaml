@@ -1,0 +1,39 @@
+# EMA Angle Strategy Backtest Configuration
+
+assets:
+  Gold: "GC=F"
+  Silver: "SI=F"
+  Bitcoin: "BTC-USD"
+
+timeframes:
+  1m:
+    interval: "1m"
+    lookback_days: 7
+  5m:
+    interval: "5m"
+    lookback_days: 59
+  15m:
+    interval: "15m"
+    lookback_days: 59
+  1h:
+    interval: "1h"
+    lookback_days: 728
+
+strategy:
+  base_ema_values: [9, 15, 21, 50, 200]
+  angle_thresholds: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+
+backtest:
+  initial_equity: 10000.0
+  commission_pct: 0.0      # Future proofing
+  slippage_pct: 0.0        # Future proofing
+  rank_metric: "total_profit"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  results_excel: "results/excel"
+  results_figures: "results/figures"
+  results_reports: "results/reports"
+  results_logs: "results/logs"
+  results_trade_logs: "results/trade_logs"
