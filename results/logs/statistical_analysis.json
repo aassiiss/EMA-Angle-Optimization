@@ -1,0 +1,96 @@
+{
+    "Buy_and_Hold": {
+        "Bitcoin_15m": {
+            "Net Profit": -1462.1521198538503,
+            "Return %": -14.621521198538504,
+            "Max Drawdown %": -28.23513763305915,
+            "Sharpe Ratio": -1.8155163846247298
+        },
+        "Bitcoin_1h": {
+            "Net Profit": -477.90948383069554,
+            "Return %": -4.779094838306955,
+            "Max Drawdown %": -52.98264806268514,
+            "Sharpe Ratio": 0.15195139233996932
+        },
+        "Bitcoin_1m": {
+            "Net Profit": -35.53519617949314,
+            "Return %": -0.35535196179493145,
+            "Max Drawdown %": -7.464521546595917,
+            "Sharpe Ratio": 0.11720755206868001
+        },
+        "Bitcoin_5m": {
+            "Net Profit": -1462.1521198538503,
+            "Return %": -14.621521198538504,
+            "Max Drawdown %": -28.504525713342638,
+            "Sharpe Ratio": -1.8229261241985752
+        },
+        "Gold_15m": {
+            "Net Profit": -1188.1004126435273,
+            "Return %": -11.881004126435272,
+            "Max Drawdown %": -17.39396156607487,
+            "Sharpe Ratio": -3.20508059922287
+        },
+        "Gold_1h": {
+            "Net Profit": 8189.613886419953,
+            "Return %": 81.89613886419953,
+            "Max Drawdown %": -27.220531252794665,
+            "Sharpe Ratio": 1.4814632542123118
+        },
+        "Gold_1m": {
+            "Net Profit": -554.5243183435832,
+            "Return %": -5.545243183435832,
+            "Max Drawdown %": -10.100632551807141,
+            "Sharpe Ratio": -8.795727330390072
+        },
+        "Gold_5m": {
+            "Net Profit": -1188.1004126435273,
+            "Return %": -11.881004126435272,
+            "Max Drawdown %": -17.39396156607487,
+            "Sharpe Ratio": -3.2613046295172414
+        },
+        "Silver_15m": {
+            "Net Profit": -1263.4726771882488,
+            "Return %": -12.634726771882487,
+            "Max Drawdown %": -31.256247663217184,
+            "Sharpe Ratio": -1.328366566369808
+        },
+        "Silver_1h": {
+            "Net Profit": 13152.099110720017,
+            "Return %": 131.52099110720016,
+            "Max Drawdown %": -47.65674032726547,
+            "Sharpe Ratio": 1.1521286193513922
+        },
+        "Silver_1m": {
+            "Net Profit": -771.5520326704063,
+            "Return %": -7.7155203267040635,
+            "Max Drawdown %": -16.044772642998353,
+            "Sharpe Ratio": -5.3999808204381825
+        },
+        "Silver_5m": {
+            "Net Profit": -1263.4726771882488,
+            "Return %": -12.634726771882487,
+            "Max Drawdown %": -31.256247663217184,
+            "Sharpe Ratio": -1.3574663262235729
+        }
+    },
+    "Statistical_Significance": {
+        "Wilcoxon_WinRate": {
+            "statistic": 266.0,
+            "p_value": 4.55674920629734e-18
+        },
+        "Wilcoxon_NetProfit": {
+            "statistic": 3279.0,
+            "p_value": 0.6389507368060763
+        },
+        "Wilcoxon_Sharpe": {
+            "statistic": 2845.0,
+            "p_value": 0.09903261709674231
+        },
+        "Mean_WinRate_Base": 26.75666666666667,
+        "Mean_WinRate_Treat": 37.804444444444435,
+        "Mean_Sharpe_Base": 0.005426495726495715,
+        "Mean_Sharpe_Treat": 0.10172222222222223,
+        "Mean_MaxDrawdown_Base": 17.959230769230768,
+        "Mean_MaxDrawdown_Treat": 14.584273504273503
+    }
+}

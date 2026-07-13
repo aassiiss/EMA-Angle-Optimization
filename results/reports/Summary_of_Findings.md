@@ -11,15 +11,15 @@ This empirical study investigates the impact of applying geometric angle thresho
 - **Total Combinations Tested:** 1440
 
 ## Statistical Findings
-Out of the total combinations tested, **1174** generated active trading signals.
-By holding trades until a structural EMA crossover exit occurred, **85** unique parameter combinations achieved a win rate of $\geq$ 50%. This demonstrates that vector-based slope confirmation significantly enhances traditional trend-following accuracy.
+Out of the total combinations tested, **1120** generated active trading signals.
+By holding trades until a structural EMA crossover exit occurred, **129** unique parameter combinations achieved a win rate of $\geq$ 50%. This demonstrates that vector-based slope confirmation significantly enhances traditional trend-following accuracy.
 
 ### Top Performing Configuration
-- **Market:** EMA(9,200) on 5° threshold
-- **Win Rate:** 36.25%
-- **Total Profit:** $13,840.33
-- **Sharpe Ratio:** 0.7389
-- **Maximum Drawdown:** 21.72%
+- **Market:** EMA(9,200) on 0.01° threshold
+- **Win Rate:** 25.81%
+- **Total Profit:** $19,020.16
+- **Sharpe Ratio:** 0.8619
+- **Maximum Drawdown:** 24.04%
 
 ## Conclusion
 The integration of trigonometric momentum filters objectively isolates high-velocity trends. While aggressive thresholds drastically limit trade frequency, they produce a robust framework for capital-efficient, high-accuracy algorithmic execution.

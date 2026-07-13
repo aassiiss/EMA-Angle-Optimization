@@ -21,12 +21,15 @@ timeframes:
 
 strategy:
   base_ema_values: [9, 15, 21, 50, 200]
-  angle_thresholds: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+  angle_thresholds: [0.01, 0.02, 0.03, 0.04, 0.05, 0.075, 0.1, 0.15, 0.2, 0.25, 0.3, 0.5]
 
 backtest:
   initial_equity: 10000.0
-  commission_pct: 0.0      # Future proofing
-  slippage_pct: 0.0        # Future proofing
+  commission_pct: 0.0005      # 5 bps per trade
+  slippage_pct: 0.0005        # 5 bps slippage per trade
+  fixed_commission: 0.0       # Optional fixed dollar cost
+  wfa_train_split: 0.7        # 70% IS, 30% OOS
+  baselines: ["standard", "roc", "macd", "linreg"]
   rank_metric: "total_profit"
 
 paths:

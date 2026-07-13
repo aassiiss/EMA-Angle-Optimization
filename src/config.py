@@ -27,12 +27,17 @@ TIMEFRAMES: Dict[str, Dict[str, Any]] = _config.get("timeframes", {})
 _base_emas: List[int] = _config.get("strategy", {}).get("base_ema_values", [])
 EMA_PAIRS: List[Tuple[int, int]] = [(f, s)
                                     for f, s in combinations(_base_emas, 2)]
-ANGLE_THRESHOLDS: List[int] = _config.get(
+ANGLE_THRESHOLDS: List[float] = _config.get(
     "strategy", {}).get("angle_thresholds", [])
 
 # Backtest Settings
 INITIAL_EQUITY: float = float(_config.get(
     "backtest", {}).get("initial_equity", 10000.0))
+COMMISSION_PCT: float = float(_config.get("backtest", {}).get("commission_pct", 0.0))
+SLIPPAGE_PCT: float = float(_config.get("backtest", {}).get("slippage_pct", 0.0))
+FIXED_COMMISSION: float = float(_config.get("backtest", {}).get("fixed_commission", 0.0))
+WFA_TRAIN_SPLIT: float = float(_config.get("backtest", {}).get("wfa_train_split", 0.7))
+BASELINES: List[str] = _config.get("backtest", {}).get("baselines", ["standard"])
 RANK_METRIC: str = _config.get("backtest", {}).get(
     "rank_metric", "total_profit")
 

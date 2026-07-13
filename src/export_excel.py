@@ -92,7 +92,7 @@ def _color_winrate(cell: Any, wr: float) -> None:
 # ── Column Definitions ───────────────────────────────────────────────────
 SUMMARY_COLS: List[str] = [
     "Market", "Timeframe", "EMA Pair", "Fast EMA", "Slow EMA",
-    "Angle Threshold", "Total Trades", "Long Trades", "Short Trades",
+    "Norm Angle Threshold", "Total Trades", "Long Trades", "Short Trades",
     "Winning", "Losing", "Win Rate (%)", "Total Profit ($)", "Avg Profit ($)",
     "Profit Factor", "Sharpe Ratio", "Max Drawdown (%)", "Final Equity ($)"
 ]
@@ -138,7 +138,7 @@ class ExcelExporter:
                      for m in pair_dict.values() if m.get("total_trades", 0) > 0)
 
         ws.append(
-            [f"EMA Angle Optimization — Full Empirical Dataset ({active} valid combos)"])
+            [f"Normalized EMA Angle Optimization — Full Empirical Dataset ({active} valid combos)"])
         ws["A1"].font = Font(bold=True, size=13, color=self.COLORS["summary"])
         ws.merge_cells(f"A1:{get_column_letter(len(SUMMARY_COLS))}1")
 
